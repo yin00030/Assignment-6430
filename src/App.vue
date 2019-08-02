@@ -1,10 +1,14 @@
 <template>
   <div id="app">
+    <h1>State Manager</h1>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/Registration">Registration</router-link>
+      <router-link to="/Dashboard">Dashboard</router-link>
     </div>
     <router-view />
+    <footer>
+      <h1>@miaoziyin.copyright</h1>
+    </footer>
   </div>
 </template>
 
@@ -15,6 +19,13 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+#app h1 {
+  text-align: left;
+}
+
+#app #nav {
+  text-align: right;
 }
 #nav {
   padding: 30px;
